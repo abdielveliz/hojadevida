@@ -1,0 +1,36 @@
+<html>
+<head>
+<TITLE>Validar si la contraseña y la repeticion de la contraseña son iguales</TITLE>
+	<center><script>
+		function combrobarClave(){
+			clave1=document.fl.clave1.value
+			clave2=document.fl.clave2.value
+			if (clave1 == "admin" && clave2=="conejo"){
+				alert("Los Datos Coinciden...\n Bienvenido");
+				var href="uno.html"
+				window.location=href;
+			}
+			else{
+				alert("Error las dos claves son iguales...\n intentelo nuevamente");
+				var href="index.html";
+				window.location=href;
+
+			};
+		}
+	</script>
+</head>
+<center><img src="mi foto.jpg" width="250" height="250px"><br></center>
+<center></center>
+<body background="https://www.creativosonline.org/wp-content/uploads/2017/08/gifs-antiguos.gif">
+	<h1><center><font color="red">Validar si la contraseña y la repetición de la contraseña son iguales</h1></center></font>
+	<br> 
+	<center><font color="white">Escribe una contraseña , y pulsa el boton. comprobar te dira si las dos son iguales</font></center>
+	<br>
+	<form action="" name="fl">
+		<center> contraseña:<input type="password" name="clave1" size="20"></center>
+		<br>
+		<center>Repite la contraseña:<input type="password" name="clave2" size="20"></center>
+		<br>
+		<center><input type="button" value="Comprobar si son iguales" onclick="combrobarClave()"></center>
+	</form>
+</body>
